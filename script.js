@@ -14,11 +14,12 @@ const aboutText = document.getElementById("about-text");
 editButton.addEventListener("click", () => {
   if (aboutText.isContentEditable) {
     aboutText.contentEditable = "false";
-    editButton.textContent = "✏️ Edit";
+    editButton.textContent = "Edit";
     alert("Changes saved!");
   } else {
     aboutText.contentEditable = "true";
     aboutText.focus();
-    editButton.textContent = "💾 Save";
+    editButton.textContent = "Save";
   }
 });
+
